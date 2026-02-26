@@ -139,6 +139,11 @@ input:focus ~ label.secChild, input:valid ~ label.secChild {
 }
 input#number7 {
     padding-left: 48px;
+    border-radius: 15px;
+}
+#number7:focus {
+    background-color: transparent;
+    box-shadow: 0 0 10px 2px #0180ff29;
 }
 #number5:focus {
     background-color: transparent;
