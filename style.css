@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.5s;
+    transition: 0.5s;
 }
 
 body {
@@ -54,7 +54,7 @@ input {
     width: 100%;
     padding: 16px;
     font-size: 16px;
-    border: 1.5px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
@@ -69,7 +69,7 @@ input.fistChild:focus {
 }
 input:focus {
     border-color: var(--primary-color);
-    border-width: 2px;
+    border-width: 1px;
     background-color:#3ba2f621;
 }
 label {
@@ -78,6 +78,7 @@ label {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    box-sizing: border-box;
 }
 input:focus ~ label.fistChild, input:valid ~ label.fistChild {
     top: 12px; 
@@ -87,6 +88,7 @@ input:focus ~ label.fistChild, input:valid ~ label.fistChild {
     padding: 0 5px;
     background-color: transparent; 
     color: var(--primary-color);
+    box-sizing: border-box;
 }
 input:focus ~ label, input:valid ~ label {
     top: 0; 
@@ -96,6 +98,7 @@ input:focus ~ label, input:valid ~ label {
     padding: 0 5px;
     background-color: white; 
     color: var(--primary-color);
+    box-sizing: border-box;
 }
 svg {
     stroke: #093f96a7;
@@ -110,6 +113,7 @@ svg {
 input:focus ~ [data-lucide],
 input:focus ~ .input-icon {
     stroke: var(--primary-color);
+    box-sizing: border-box;
 }
 .secChild {
     left: 45px;
@@ -124,9 +128,11 @@ input:focus ~ label.secChild, input:valid ~ label.secChild {
     padding: 0 5px;
     background-color: transparent; 
     color: var(--primary-color);
+    box-sizing: border-box;
 }
 #number2, #number6, #number8  {
     padding-left: 48px;
+    box-sizing: border-box;
 }
 #number3, #number5 {
     border-radius: 0;
